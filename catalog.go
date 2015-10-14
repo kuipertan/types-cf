@@ -11,6 +11,7 @@ type Service struct {
 	Name        string       `json:"name"`
 	Description string       `json:"description"`
 	Bindable    bool         `json:"bindable"`
+	Plan_updateable   bool   `json:"plan_updateable"`
 	Tags        []string     `json:"tags,omitempty"`
 	Metadata    *ServiceMeta `json:"metadata,omitempty"`
 	Requires    []string     `json:"requires,omitempty"`
